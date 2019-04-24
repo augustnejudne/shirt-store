@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import FIRST_ACTION from './actions.js';
+import { FIRST_ACTION } from './actions.js';
 
 const sampleState = (state = {}, action) => {
   switch(action.type) {
