@@ -1,0 +1,9 @@
+#section-item-finder {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  #finder-options {
+    background: #fff;
+    padding: 1rem;
+  }
+}

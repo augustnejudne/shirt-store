@@ -9,7 +9,7 @@ import ReduxThunk from 'redux-thunk';
 import rootReducer from './store/reducer.js';
 import './styles/styles.scss';
 
-import App from './components/App.js';
+import Home from './components/Home';
 
 const store = createStore(
   rootReducer,
@@ -20,7 +20,7 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={App} />
+        <Route path="/" exact component={Home} />
       </Switch>
     </BrowserRouter>
   </Provider>,

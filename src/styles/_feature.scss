@@ -1,0 +1,33 @@
+#section-feature {
+  .feature {
+    margin: 2rem 0;
+    background-image: url('../assets/images/feature-bg-male-model.png');
+    background-size: cover;
+    height: 380px;
+    padding-left: 6rem;
+
+    h2 {
+      padding: 5rem 0 0;
+      font-size: 4rem;
+      color: #333;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .feature-lists-ul-wrapper {
+      color: white;
+      display: grid;
+      width: 65rem;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        list-style: none;
+        margin: 1rem 0 0;
+        padding: 0;
+
+        li {
+          padding: 3px 0;
+        }
+      }
+    }
+  }
+}
