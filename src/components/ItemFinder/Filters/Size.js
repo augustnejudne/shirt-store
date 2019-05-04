@@ -14,7 +14,7 @@ const Size = props => {
         onClick={() => {
           setSelectedSize(size);
           props.selectSize(size);
-          props.filter(props.filters.color, size);
+          props.filter(props.filters.color, size, props.filters.price, props.filters.types);
         }}
       >
         {size.toUpperCase()}

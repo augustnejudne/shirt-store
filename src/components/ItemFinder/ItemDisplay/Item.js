@@ -1,11 +1,18 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../../store/actions';
 
 const Item = props => {
+  const inCart = props.cart.includes(props.item);
+
   return (
     <div className="item">
       <div
         className="item-img"
-        style={{ backgroundImage: `url(${props.item.img}), linear-gradient(white, white)` }}
+        style={{
+          backgroundImage: `url(${props.item.img}),
+          linear-gradient(white, white)`,
+        }}
       />
       <h4 className="item-name">{props.item.name}</h4>
       <div className="sizes-list">
@@ -19,9 +26,27 @@ const Item = props => {
             )
         )}
       </div>
-      <div className="price">${props.item.price}</div>
+      <div className="price-add-to-cart-wrapper">
+        <div className="price">${props.item.price}</div>
+        <button className={inCart ? 'red-button' : 'green-button'} onClick={() => {
+          !inCart ?
+          props.addToCart(props.item) :
+          props.removeFromCart(props.item);
+        }}>
+          {inCart ? 'Remove from cart' : 'Add to cart'}
+        </button>
+      </div>
     </div>
   );
 };
 
-export default Item;
+const mapStateToProps = ({ cart }) => {
+  return {
+    cart,
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  actions
+)(Item);

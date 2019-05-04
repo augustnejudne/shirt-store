@@ -10,58 +10,58 @@ const jackets = [
   {
     name: 'Red Jacket',
     img: redJacket,
-    sizes: ['all', 'xs', 's', 'l', 'xl'],
+    sizes: ['all', 'l', 'xl'],
     color: ['all', 'red'],
-    price: 20,
-    type: ['all', 'jacket']
+    price: 25,
+    type: 'jacket',
   },
   {
     name: 'Orange Jacket',
     img: orangeJacket,
     sizes: ['all', 's', 'm', 'l'],
     color: ['all', 'orange'],
-    price: 20,
-    type: ['all', 'jacket']
+    price: 25,
+    type: 'jacket',
   },
   {
     name: 'Yellow Jacket',
     img: yellowJacket,
-    sizes: ['all', 'xs', 'm', 'l'],
+    sizes: ['all', 's', 'm', 'l', 'xl'],
     color: ['all', 'yellow'],
-    price: 20,
-    type: ['all', 'jacket']
+    price: 25,
+    type: 'jacket',
   },
   {
     name: 'Green Jacket',
     img: greenJacket,
     sizes: ['all', 'xs', 'm', 'l', 'xl'],
     color: ['all', 'green'],
-    price: 20,
-    type: ['all', 'jacket']
+    price: 25,
+    type: 'jacket',
   },
   {
     name: 'Blue Jacket',
     img: blueJacket,
-    sizes: ['all', 'xs', 's', 'm', 'xl'],
+    sizes: ['all', 'xs', 'm'],
     color: ['all', 'blue'],
-    price: 20,
-    type: ['all', 'jacket']
+    price: 25,
+    type: 'jacket',
   },
   {
     name: 'Purple Jacket',
     img: purpleJacket,
-    sizes: ['all', 'xs', 's', 'l', 'xl'],
+    sizes: ['all', 's', 'l', 'xl'],
     color: ['all', 'purple'],
-    price: 20,
-    type: ['all', 'jacket']
+    price: 25,
+    type: 'jacket',
   },
   {
     name: 'Pink Jacket',
     img: pinkJacket,
-    sizes: ['all', 's', 'l', 'xl'],
+    sizes: ['all', 'xs', 's', 'm'],
     color: ['all', 'pink'],
-    price: 20,
-    type: ['all', 'jacket']
+    price: 25,
+    type: 'jacket',
   },
 ];
 

@@ -10,42 +10,42 @@ const longSleeves = [
   {
     name: 'Red Long Sleeve',
     img: redLongslv,
-    sizes: ['all', 'xs', 's', 'l', 'xl'],
+    sizes: ['all', 'm', 'xl'],
     color: ['all', 'red'],
     price: 17,
-    type: ['all', 'long-sleeve']
+    type: 'long-sleeve'
   },
   {
     name: 'Orange Long Sleeve',
     img: orangeLongslv,
-    sizes: ['all', 's', 'm', 'l'],
+    sizes: ['all', 's', 'l'],
     color: ['all', 'orange'],
     price: 17,
-    type: ['all', 'long-sleeve']
+    type: 'long-sleeve'
   },
   {
     name: 'Yellow Long Sleeve',
     img: yellowLongslv,
-    sizes: ['all', 'xs', 'm', 'l'],
+    sizes: ['all', 's', 'm', 'xl'],
     color: ['all', 'yellow'],
     price: 17,
-    type: ['all', 'long-sleeve']
+    type: 'long-sleeve'
   },
   {
     name: 'Green Long Sleeve',
     img: greenLongslv,
-    sizes: ['all', 'xs', 'm', 'l', 'xl'],
+    sizes: ['all', 'xs', 'm', ],
     color: ['all', 'green'],
     price: 17,
-    type: ['all', 'long-sleeve']
+    type: 'long-sleeve'
   },
   {
     name: 'Blue Long Sleeve',
     img: blueLongslv,
-    sizes: ['all', 'xs', 's', 'm', 'xl'],
+    sizes: ['all', 'xs', 'xl'],
     color: ['all', 'blue'],
     price: 17,
-    type: ['all', 'long-sleeve']
+    type: 'long-sleeve'
   },
   {
     name: 'Purple Long Sleeve',
@@ -53,7 +53,7 @@ const longSleeves = [
     sizes: ['all', 'xs', 's', 'l', 'xl'],
     color: ['all', 'purple'],
     price: 17,
-    type: ['all', 'long-sleeve']
+    type: 'long-sleeve'
   },
   {
     name: 'Pink Long Sleeve',
@@ -61,7 +61,7 @@ const longSleeves = [
     sizes: ['all', 's', 'l', 'xl'],
     color: ['all', 'pink'],
     price: 17,
-    type: ['all', 'long-sleeve']
+    type: 'long-sleeve'
   },
 ];
 

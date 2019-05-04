@@ -1,15 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../../store/actions.js';
 
 const Type = props => {
+  const { filter, filters } = props;
+  const [selectedTypes, setSelectedTypes] = useState(filters.types);
   const types = ['t-shirt', 'polo', 'sweat-shirt', 'long-sleeve', 'jacket'];
+
+  useEffect(() => {
+    filter(filters.color, filters.size, filters.price, selectedTypes);
+  }, [selectedTypes, filter, filters]);
 
   const renderTypes = () => {
     return types.map((type, i) => (
       <label key={i}>
-        <input type="checkbox" name={type} id={type} />
-        {type}
+        <input
+          type="checkbox"
+          name={type}
+          id={type}
+          checked={selectedTypes.includes(type)}
+          onChange={() => {
+            if (!selectedTypes.includes(type)) {
+              setSelectedTypes([...selectedTypes, type]);
+            } else {
+              setSelectedTypes(selectedTypes.filter(e => e !== type));
+            }
+          }}
+        />
+        &nbsp;{type.charAt(0).toUpperCase() + type.slice(1)}
       </label>
     ));
   };

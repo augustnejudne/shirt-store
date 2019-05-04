@@ -10,17 +10,17 @@ const poloShirts = [
   {
     name: 'Red Polo',
     img: redPolo,
-    sizes: ['all', 'xs', 's', 'l', 'xl'],
+    sizes: ['all', 's', 'm', 'l'],
     color: ['all', 'red'],
-    type: ['all', 'polo'],
+    type: 'polo',
     price: 15
   },
   {
     name: 'Orange Polo',
     img: orangePolo,
-    sizes: ['all', 's', 'm', 'l'],
+    sizes: ['all', 's', 'l', 'xl'],
     color: ['all', 'orange'],
-    type: ['all', 'polo'],
+    type: 'polo',
     price: 15
   },
   {
@@ -28,15 +28,15 @@ const poloShirts = [
     img: yellowPolo,
     sizes: ['all', 'xs', 'm', 'l'],
     color: ['all', 'yellow'],
-    type: ['all', 'polo'],
+    type: 'polo',
     price: 15
   },
   {
     name: 'Green Polo',
     img: greenPolo,
-    sizes: ['all', 'xs', 'm', 'l', 'xl'],
+    sizes: ['all', 'xs'],
     color: ['all', 'green'],
-    type: ['all', 'polo'],
+    type: 'polo',
     price: 15
   },
   {
@@ -44,23 +44,23 @@ const poloShirts = [
     img: bluePolo,
     sizes: ['all', 'xs', 's', 'm', 'xl'],
     color: ['all', 'blue'],
-    type: ['all', 'polo'],
+    type: 'polo',
     price: 15
   },
   {
     name: 'Purple Polo',
     img: purplePolo,
-    sizes: ['all', 'xs', 's', 'l', 'xl'],
+    sizes: ['all', 'xs', 'm', 'l', 'xl'],
     color: ['all', 'purple'],
-    type: ['all', 'polo'],
+    type: 'polo',
     price: 15
   },
   {
     name: 'Pink Shirt',
     img: pinkPolo,
-    sizes: ['all', 's', 'l', 'xl'],
+    sizes: ['all', 'xs', 'l', 'xl'],
     color: ['all', 'pink'],
-    type: ['all', 'polo'],
+    type: 'polo',
     price: 15
   },
 ];

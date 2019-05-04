@@ -127,4 +127,16 @@
       }
     }
   }
+
+  .type-section {
+    .types-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0 0 1rem;
+
+      * {
+        padding: 3px 0;
+      }
+    }
+  }
 }

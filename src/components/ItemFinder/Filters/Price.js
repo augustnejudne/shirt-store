@@ -4,8 +4,11 @@ import * as actions from '../../../store/actions';
 import InputRange from 'react-input-range';
 import 'react-input-range/lib/css/index.css';
 
+export const min = 12;
+export const max = 25;
+
 const Price = props => {
-  const [price, setPrice] = useState({ min: 12, max: 20 });
+  const [price, setPrice] = useState({ min, max });
   return (
     <div className="filter-section price-section bottom-border">
       <h4>Price:</h4>
@@ -14,9 +17,15 @@ const Price = props => {
           maxValue={20}
           minValue={12}
           onChange={value => setPrice(value)}
-          onChangeComplete={value =>
-            props.filter(props.filters.color, props.filters.size, value)
-          }
+          onChangeComplete={value => {
+            props.selectPrice(value);
+            props.filter(
+              props.filters.color,
+              props.filters.size,
+              value,
+              props.filters.types
+            );
+          }}
           value={price}
           formatLabel={value => ``}
         />

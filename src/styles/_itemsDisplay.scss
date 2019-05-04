@@ -11,12 +11,9 @@
     margin: 5rem 0;
   }
 
-
-
   .item {
     width: 100%;
-    height: 33rem;
-    box-shadow: 0 .5rem 1rem #00000033;
+    box-shadow: 0 0.5rem 1rem #00000033;
     border-radius: 5px;
     text-align: center;
 
@@ -42,10 +39,38 @@
       }
     }
 
-    .price {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin-top: 1rem;
+    .price-add-to-cart-wrapper {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem 0;
+      align-items: center;
+      .price {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+
+      .green-button,
+      .red-button {
+        border: none;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .green-button {
+        background: green;
+        &:hover {
+          background: darkgreen;
+        }
+      }
+
+      .red-button {
+        background: firebrick;
+        &:hover {
+          background: darkred;
+        }
+      }
     }
   }
 }

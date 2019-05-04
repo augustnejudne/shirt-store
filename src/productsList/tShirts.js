@@ -13,7 +13,7 @@ const tShirts = [
     sizes: ['all', 'xs', 's', 'l', 'xl'],
     color: ['all', 'red'],
     price: 12,
-    type: ['all', 't-shirt']
+    type: 't-shirt'
   },
   {
     name: 'Orange Shirt',
@@ -21,7 +21,7 @@ const tShirts = [
     sizes: ['all', 's', 'm', 'l'],
     color: ['all', 'orange'],
     price: 12,
-    type: ['all', 't-shirt']
+    type: 't-shirt'
   },
   {
     name: 'Yellow Shirt',
@@ -29,7 +29,7 @@ const tShirts = [
     sizes: ['all', 'xs', 'm', 'l'],
     color: ['all', 'yellow'],
     price: 12,
-    type: ['all', 't-shirt']
+    type: 't-shirt'
   },
   {
     name: 'Green Shirt',
@@ -37,7 +37,7 @@ const tShirts = [
     sizes: ['all', 'xs', 'm', 'l', 'xl'],
     color: ['all', 'green'],
     price: 12,
-    type: ['all', 't-shirt']
+    type: 't-shirt'
   },
   {
     name: 'Blue Shirt',
@@ -45,7 +45,7 @@ const tShirts = [
     sizes: ['all', 'xs', 's', 'm', 'xl'],
     color: ['all', 'blue'],
     price: 12,
-    type: ['all', 't-shirt']
+    type: 't-shirt'
   },
   {
     name: 'Purple Shirt',
@@ -53,7 +53,7 @@ const tShirts = [
     sizes: ['all', 'xs', 's', 'l', 'xl'],
     color: ['all', 'purple'],
     price: 12,
-    type: ['all', 't-shirt']
+    type: 't-shirt'
   },
   {
     name: 'Pink Shirt',
@@ -61,7 +61,7 @@ const tShirts = [
     sizes: ['all', 's', 'l', 'xl'],
     color: ['all', 'pink'],
     price: 12,
-    type: ['all', 't-shirt']
+    type: 't-shirt'
   },
 ];
 

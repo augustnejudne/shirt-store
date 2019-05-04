@@ -16,12 +16,12 @@ const Color = props => {
           if (color === selectedColor) {
             setSelectedColor('all');
             props.selectColor('all');
-            props.filter('all', props.filters.size);
+            props.filter('all', props.filters.size, props.filters.price, props.filters.types);
             return;
           }
           setSelectedColor(color);
           props.selectColor(color);
-          props.filter(color, props.filters.size);
+          props.filter(color, props.filters.size, props.filters.price, props.filters.types);
         }}
       />
     ));
