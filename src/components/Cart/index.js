@@ -10,18 +10,17 @@ const Cart = props => {
       <div className="cart-dark-bg" onClick={() => props.showCart()} />
       <div className="cart">
         <h3>Cart</h3>
-        <span className="close-button" onClick={() => props.showCart()}>&times;</span>
+        <span className="close-button" onClick={() => props.showCart()}>
+          &times;
+        </span>
         <ul>
-          {
-            cartItems.length < 1 ? 
-              <h3 className="cart-is-empty">Your cart is empty!</h3>
-            :
-            cartItems.map((item, i) => (
-            <CartItem key={i} item={item} />
-          ))
-          }
+          {cartItems.length < 1 ? (
+            <h3 className="cart-is-empty">Your cart is empty!</h3>
+          ) : (
+            cartItems.map((item, i) => <CartItem key={i} item={item} />)
+          )}
         </ul>
-        <button>Place Order</button>
+        {cartItems.length !== 0 && <button>Place Order</button>}
       </div>
     </div>
   );
@@ -33,4 +32,7 @@ const mapStateToProps = ({ cart }) => {
   };
 };
 
-export default connect(mapStateToProps, actions)(Cart);
+export default connect(
+  mapStateToProps,
+  actions
+)(Cart);
