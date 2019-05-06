@@ -1,10 +1,10 @@
-import redLongslv from '../assets/images/longslv/red-longslv.png';
-import orangeLongslv from '../assets/images/longslv/orange-longslv.png';
-import yellowLongslv from '../assets/images/longslv/yellow-longslv.png';
-import greenLongslv from '../assets/images/longslv/green-longslv.png';
-import blueLongslv from '../assets/images/longslv/blue-longslv.png';
-import purpleLongslv from '../assets/images/longslv/purple-longslv.png';
-import pinkLongslv from '../assets/images/longslv/pink-longslv.png';
+import redLongslv from '../assets/images/longslv/red-longslv.jpg';
+import orangeLongslv from '../assets/images/longslv/orange-longslv.jpg';
+import yellowLongslv from '../assets/images/longslv/yellow-longslv.jpg';
+import greenLongslv from '../assets/images/longslv/green-longslv.jpg';
+import blueLongslv from '../assets/images/longslv/blue-longslv.jpg';
+import purpleLongslv from '../assets/images/longslv/purple-longslv.jpg';
+import pinkLongslv from '../assets/images/longslv/pink-longslv.jpg';
 
 const longSleeves = [
   {

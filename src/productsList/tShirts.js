@@ -1,10 +1,10 @@
-import redShirt from '../assets/images/tshirts/red-shirt.png';
-import orangeShirt from '../assets/images/tshirts/orange-shirt.png';
-import yellowShirt from '../assets/images/tshirts/yellow-shirt.png';
-import greenShirt from '../assets/images/tshirts/green-shirt.png';
-import blueShirt from '../assets/images/tshirts/blue-shirt.png';
-import purpleShirt from '../assets/images/tshirts/purple-shirt.png';
-import pinkShirt from '../assets/images/tshirts/pink-shirt.png';
+import redShirt from '../assets/images/tshirts/red-shirt.jpg';
+import orangeShirt from '../assets/images/tshirts/orange-shirt.jpg';
+import yellowShirt from '../assets/images/tshirts/yellow-shirt.jpg';
+import greenShirt from '../assets/images/tshirts/green-shirt.jpg';
+import blueShirt from '../assets/images/tshirts/blue-shirt.jpg';
+import purpleShirt from '../assets/images/tshirts/purple-shirt.jpg';
+import pinkShirt from '../assets/images/tshirts/pink-shirt.jpg';
 
 const tShirts = [
   {

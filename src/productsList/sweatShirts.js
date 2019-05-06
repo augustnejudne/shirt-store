@@ -1,10 +1,10 @@
-import redSwt from '../assets/images/sweatshirts/red-sweatshirt.png'
-import orangeSwt from '../assets/images/sweatshirts/orange-sweatshirt.png'
-import yellowSwt from '../assets/images/sweatshirts/yellow-sweatshirt.png'
-import greenSwt from '../assets/images/sweatshirts/green-sweatshirt.png'
-import blueSwt from '../assets/images/sweatshirts/blue-sweatshirt.png'
-import purpleSwt from '../assets/images/sweatshirts/purple-sweatshirt.png'
-import pinkSwt from '../assets/images/sweatshirts/pink-sweatshirt.png'
+import redSwt from '../assets/images/sweatshirts/red-sweatshirt.jpg'
+import orangeSwt from '../assets/images/sweatshirts/orange-sweatshirt.jpg'
+import yellowSwt from '../assets/images/sweatshirts/yellow-sweatshirt.jpg'
+import greenSwt from '../assets/images/sweatshirts/green-sweatshirt.jpg'
+import blueSwt from '../assets/images/sweatshirts/blue-sweatshirt.jpg'
+import purpleSwt from '../assets/images/sweatshirts/purple-sweatshirt.jpg'
+import pinkSwt from '../assets/images/sweatshirts/pink-sweatshirt.jpg'
 
 const sweatShirts = [
   {

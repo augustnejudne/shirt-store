@@ -1,10 +1,10 @@
-import redPolo from '../assets/images/poloshirts/red-poloshirt.png';
-import orangePolo from '../assets/images/poloshirts/orange-poloshirt.png';
-import yellowPolo from '../assets/images/poloshirts/yellow-poloshirt.png';
-import greenPolo from '../assets/images/poloshirts/green-poloshirt.png';
-import bluePolo from '../assets/images/poloshirts/blue-poloshirt.png';
-import purplePolo from '../assets/images/poloshirts/purple-poloshirt.png';
-import pinkPolo from '../assets/images/poloshirts/pink-poloshirt.png';
+import redPolo from '../assets/images/poloshirts/red-poloshirt.jpg';
+import orangePolo from '../assets/images/poloshirts/orange-poloshirt.jpg';
+import yellowPolo from '../assets/images/poloshirts/yellow-poloshirt.jpg';
+import greenPolo from '../assets/images/poloshirts/green-poloshirt.jpg';
+import bluePolo from '../assets/images/poloshirts/blue-poloshirt.jpg';
+import purplePolo from '../assets/images/poloshirts/purple-poloshirt.jpg';
+import pinkPolo from '../assets/images/poloshirts/pink-poloshirt.jpg';
 
 const poloShirts = [
   {
