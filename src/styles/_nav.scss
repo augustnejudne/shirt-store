@@ -1,20 +1,22 @@
 nav {
-  background: #333;
   color: #fff;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 1rem;
 
   .nav-container {
-    max-width: 1200px;
+    max-width: 1020px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr 4rem;
-    justify-items: center;
+    // grid-template-columns: 1fr 3fr 2fr 4rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 
     h1 {
       justify-self: start;
-      color: $blue;
-      text-transform: uppercase;
+      color: $primary;
+      span {
+        color: tomato;
+      }
     }
 
     ul {
@@ -66,9 +68,11 @@ nav {
     .shopping-bag {
       justify-self: end;
       position: relative;
+      cursor: pointer;
 
       #shopping-bag-icon {
         font-size: 2rem;
+        color: black;
       }
 
       span {

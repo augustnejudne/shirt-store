@@ -13,13 +13,6 @@ const Filters = props => {
       <Color />
       <Size />
       <Price />
-      <button
-        onClick={() => {
-          props.filter(props.filters.color, props.filters.size);
-        }}
-      >
-        Submit
-      </button>
     </div>
   );
 };

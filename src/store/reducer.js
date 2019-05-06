@@ -8,6 +8,7 @@ import {
   FILTER,
   ADD_TO_CART,
   REMOVE_FROM_CART,
+  SHOW_CART,
 } from './actions.js';
 import { min, max } from '../components/ItemFinder/Filters/Price';
 
@@ -66,12 +67,17 @@ const filters = (
   }
 };
 
-export const cart = (state = [], action) => {
+export const cart = (state = { showCart: false, cartItems: [] }, action) => {
   switch (action.type) {
     case ADD_TO_CART:
-      return [...state, action.payload];
+      return { ...state, cartItems: [...state.cartItems, action.payload] };
     case REMOVE_FROM_CART:
-      return state.filter(e => e !== action.payload);
+      return {
+        ...state,
+        cartItems: state.cartItems.filter(e => e !== action.payload),
+      };
+    case SHOW_CART:
+      return { ...state, showCart: !state.showCart };
     default:
       return state;
   }

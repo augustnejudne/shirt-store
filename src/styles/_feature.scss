@@ -1,24 +1,33 @@
 #section-feature {
   .feature {
     margin: 2rem 0;
-    background-image: url('../assets/images/feature-bg-male-model.png');
+    background-image: url('../assets/images/red-shirt-feature.jpg');
     background-size: cover;
     height: 380px;
-    padding-left: 6rem;
+    // padding-left: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10rem auto;
 
     h2 {
-      padding: 5rem 0 0;
+      // padding: 5rem 0 0;
       font-size: 4rem;
       color: #333;
       font-family: 'Playfair Display', serif;
+      grid-area: 1/2/2/3;
+      align-self: end;
     }
 
     .feature-lists-ul-wrapper {
-      color: white;
+      color: #000;
       display: grid;
       width: 65rem;
       display: flex;
       justify-content: space-between;
+      grid-area: 2/2/2/3;
+      padding-left: 4rem;
+      padding-top: 3rem;
+      text-shadow: 0 1px 2px white;
       ul {
         list-style: none;
         margin: 1rem 0 0;
@@ -30,4 +39,10 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 720px) {
+#section-feature {
+  display: none;
+}
 }

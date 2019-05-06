@@ -14,8 +14,8 @@ const Price = props => {
       <h4>Price:</h4>
       <div className="inputs-container">
         <InputRange
-          maxValue={20}
-          minValue={12}
+          minValue={min}
+          maxValue={max}
           onChange={value => setPrice(value)}
           onChangeComplete={value => {
             props.selectPrice(value);

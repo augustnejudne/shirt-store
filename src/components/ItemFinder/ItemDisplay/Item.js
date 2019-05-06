@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import * as actions from '../../../store/actions';
 
 const Item = props => {
-  const inCart = props.cart.includes(props.item);
+  const inCart = props.cart.cartItems.includes(props.item);
 
   return (
     <div className="item">

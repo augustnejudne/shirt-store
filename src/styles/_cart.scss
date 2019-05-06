@@ -1,0 +1,132 @@
+.cart-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+
+  .cart-dark-bg {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .cart {
+    background: white;
+    z-index: 1;
+    height: auto;
+    width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    position: relative;
+
+    .cart-is-empty {
+      color: $primary;
+      margin: 5rem auto;
+      text-align: center;
+    }
+
+    .close-button {
+      font-size: 2rem;
+      font-weight: 800;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.5rem;
+      height: 3.5rem;
+      background: black;
+      color: white;
+      border-radius: 0 0 0 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      width: 30rem;
+      padding: 1rem;
+      color: white;
+      background: darkred;
+      border: none;
+      border-radius: 5px;
+      margin-top: 3rem;
+
+      &:hover {
+        background: firebrick;
+      }
+    }
+
+    .cart-item {
+      padding: 1rem 0;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      margin-left: 8rem;
+
+      &:not(:last-child) {
+        border-bottom: 2px solid #ddd;
+      }
+
+      .cart-item-img {
+        width: 20rem;
+        height: 25rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        margin-right: 3rem;
+      }
+      .cart-item-details {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+        }
+        .cart-item-sizes-wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 2rem;
+          padding: 0.5rem 0;
+          width: 10rem;
+
+          p {
+            justify-self: end;
+            text-transform: uppercase;
+          }
+
+          input {
+            width: 6rem;
+          }
+        }
+
+        .spacer {
+          flex-grow: 1;
+        }
+
+        .remove-cart-item {
+          display: inline-block;
+          font-size: 1.5rem;
+          text-transform: lowercase;
+          color: darkred;
+          border-bottom: 1px dashed darkred;
+          align-self: start;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
