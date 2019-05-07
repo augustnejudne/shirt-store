@@ -13,6 +13,14 @@ const Price = props => {
     <div className="filter-section prices-section bottom-border">
       <h4>Price:</h4>
       <div className="inputs-container">
+        <div className="minmax-container">
+          <div className="min">
+            min: <span>${price.min}</span>
+          </div>
+          <div className="max">
+            max: <span>${price.max}</span>
+          </div>
+        </div>
         <InputRange
           minValue={min}
           maxValue={max}
@@ -29,14 +37,6 @@ const Price = props => {
           value={price}
           formatLabel={value => ``}
         />
-        <div className="minmax-container">
-          <div className="min">
-            min: <span>${price.min}</span>
-          </div>
-          <div className="max">
-            max: <span>${price.max}</span>
-          </div>
-        </div>
       </div>
     </div>
   );

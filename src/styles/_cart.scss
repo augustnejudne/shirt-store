@@ -64,7 +64,7 @@
       background: darkred;
       border: none;
       border-radius: 5px;
-      margin-top: 3rem;
+      margin: 2rem auto;
 
       &:hover {
         background: firebrick;
@@ -129,8 +129,4 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 720px) {
-
 }

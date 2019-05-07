@@ -91,6 +91,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 2rem;
       .input-range {
         margin-top: 1rem;
         width: 90%;
@@ -117,11 +118,11 @@
     }
     .minmax-container {
       width: 80%;
-      margin-top: 2rem;
+      // margin-top: 2rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-items: center;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       span {
         font-weight: 600;
       }
@@ -155,6 +156,7 @@
       .colors-wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
         grid-gap: 2rem;
         .color {
           width: 2rem;
