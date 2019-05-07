@@ -10,7 +10,7 @@ export const max = 25;
 const Price = props => {
   const [price, setPrice] = useState({ min, max });
   return (
-    <div className="filter-section price-section bottom-border">
+    <div className="filter-section prices-section bottom-border">
       <h4>Price:</h4>
       <div className="inputs-container">
         <InputRange

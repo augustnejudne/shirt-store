@@ -21,7 +21,8 @@
     background: white;
     z-index: 1;
     height: auto;
-    width: 60rem;
+    width: 50rem;
+    max-width: 90%;
     margin: 0 auto;
     padding: 1rem;
     margin: 2rem auto;
@@ -57,6 +58,7 @@
       display: block;
       margin: 0 auto;
       width: 30rem;
+      max-width: 90%;
       padding: 1rem;
       color: white;
       background: darkred;
@@ -72,29 +74,29 @@
     .cart-item {
       padding: 1rem 0;
       display: grid;
-      grid-template-columns: 1fr 2fr;
-      margin-left: 8rem;
+      grid-template-columns: 1fr 1fr;
+      // margin-left: 8rem;
 
       &:not(:last-child) {
         border-bottom: 2px solid #ddd;
       }
 
       .cart-item-img {
-        width: 20rem;
-        height: 25rem;
+        // width: 20rem;
+        // height: 25rem;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center center;
-        margin-right: 3rem;
+        // margin-right: 3rem;
       }
       .cart-item-details {
-        padding-top: 2rem;
-        display: flex;
-        flex-direction: column;
+        // padding-top: 2rem;
+        // display: flex;
+        // flex-direction: column;
 
         h3 {
-          font-size: 1.5rem;
-          margin-bottom: 2rem;
+          // font-size: 1.5rem;
+          // margin-bottom: 2rem;
         }
         .cart-item-sizes-wrapper {
           display: grid;
@@ -112,21 +114,23 @@
             width: 6rem;
           }
         }
-
-        .spacer {
-          flex-grow: 1;
-        }
-
-        .remove-cart-item {
-          display: inline-block;
-          font-size: 1.5rem;
-          text-transform: lowercase;
-          color: darkred;
-          border-bottom: 1px dashed darkred;
-          align-self: start;
-          cursor: pointer;
+      }
+      .remove-cart-item {
+        display: inline-block;
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: lowercase;
+        color: darkred;
+        cursor: pointer;
+        grid-column: 1/3;
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
   }
+}
+
+@media screen and (max-width: 720px) {
+
 }

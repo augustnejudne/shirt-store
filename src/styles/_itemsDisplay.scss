@@ -13,7 +13,7 @@
 
   .item {
     width: 100%;
-    box-shadow: 0 0.5rem 1rem #00000033;
+    box-shadow: 0 0.5rem 1rem #00000022;
     border-radius: 5px;
     text-align: center;
 
@@ -77,7 +77,7 @@
 
 @media screen and (max-width: 720px) {
   .items-wrapper {
-    padding: 0 0 0 2rem;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -86,9 +86,6 @@
 
     .item {
       max-width: 25rem;
-      box-shadow: 0 0.5rem 1rem #00000033;
-      border-radius: 5px;
-      text-align: center;
     }
   }
 }

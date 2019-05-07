@@ -10,7 +10,7 @@ import {
   REMOVE_FROM_CART,
   SHOW_CART,
 } from './actions.js';
-import { min, max } from '../components/ItemFinder/Filters/Price';
+import { min, max } from '../components/ItemFinder/Filters/Prices';
 
 import tShirts from '../productsList/tShirts';
 import poloShirts from '../productsList/poloShirts';

@@ -23,7 +23,7 @@ const Size = props => {
   };
 
   return (
-    <div className="filter-section size-section bottom-border">
+    <div className="filter-section sizes-section bottom-border">
       <h4>Size:</h4>
       <div className="sizes-container">{renderSizes()}</div>
     </div>

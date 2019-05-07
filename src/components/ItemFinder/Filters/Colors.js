@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../../store/actions.js';
 
-const Color = props => {
+const Colors = props => {
   const [selectedColor, setSelectedColor] = useState('');
   const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'];
 
@@ -28,7 +28,7 @@ const Color = props => {
   };
 
   return (
-    <div className="filter-section color-section bottom-border">
+    <div className="filter-section colors-section bottom-border">
       <h4>Color:</h4>
       <div className="colors-wrapper">{renderColors()}</div>
     </div>
@@ -44,4 +44,4 @@ const mapStateToProps = ({ filters }) => {
 export default connect(
   mapStateToProps,
   actions
-)(Color);
+)(Colors);

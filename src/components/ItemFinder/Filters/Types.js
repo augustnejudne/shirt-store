@@ -5,7 +5,7 @@ import * as actions from '../../../store/actions.js';
 const Type = props => {
   const { filter, filters } = props;
   const [selectedTypes, setSelectedTypes] = useState(filters.types);
-  const types = ['t-shirt', 'polo', 'sweat-shirt', 'long-sleeve', 'jacket'];
+  const types = ['t-shirt', 'polo', 'long-sleeve', 'sweat-shirt', 'jacket'];
 
   useEffect(() => {
     filter(filters.color, filters.size, filters.price, selectedTypes);
@@ -33,7 +33,7 @@ const Type = props => {
   };
 
   return (
-    <div className="filter-section type-section bottom-border">
+    <div className="filter-section types-section bottom-border">
       <h4>Type:</h4>
       <div className="types-wrapper">{renderTypes()}</div>
     </div>

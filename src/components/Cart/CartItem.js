@@ -22,9 +22,8 @@ const CartItem = props => {
             )
           );
         })}
-        <div className="spacer" />
-        <p className="remove-cart-item" onClick={() => props.removeFromCart(item)}>Remove</p>
       </div>
+      <p className="remove-cart-item" onClick={() => props.removeFromCart(item)}>Remove</p>
     </div>
   );
 };
