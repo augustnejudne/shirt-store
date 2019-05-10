@@ -67,8 +67,13 @@ nav {
     }
     .shopping-bag {
       justify-self: end;
-      position: relative;
+      position: fixed;
       cursor: pointer;
+      top: 20px;
+      right: 10px;
+      background: white;
+      padding: 1rem;
+      border-radius: 100%;
 
       #shopping-bag-icon {
         font-size: 2rem;
@@ -79,7 +84,7 @@ nav {
         background: red;
         position: absolute;
         transform: translate(50%, -50%);
-        top: 0;
+        top: 7px;
         width: 2rem;
         height: 2rem;
         border-radius: 100%;
