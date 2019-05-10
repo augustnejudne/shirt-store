@@ -29,7 +29,9 @@
     border-radius: 10px;
     max-height: calc(100vh - 2rem);
     overflow-y: auto;
-    position: relative;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
 
     .cart-is-empty {
       color: $primary;
@@ -104,6 +106,7 @@
           grid-gap: 2rem;
           padding: 0.5rem 0;
           width: 10rem;
+          align-items: center;
 
           p {
             justify-self: end;
@@ -112,6 +115,7 @@
 
           input {
             width: 6rem;
+            height: 3rem;
           }
         }
       }
